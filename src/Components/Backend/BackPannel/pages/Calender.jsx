@@ -4,7 +4,7 @@ import "react-calendar/dist/Calendar.css";
 
 const Calender = () => {
   return (
-    <div>
+    <div className="gradient rounded-xl w-[328px] ">
       <Calendar />
     </div>
   );

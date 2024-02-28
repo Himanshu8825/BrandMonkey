@@ -21,11 +21,15 @@ const AdminHome = () => {
             <Card />
           </div>
           <div className="w-1/3 px-2">
-            <Card />
+            <Notes />
           </div>
         </div>
-        <div className="flex justify-between flex-1 ml-8 w-full">
-          <div className="px-2 w-full">
+
+        <div className="flex justify-between flex-1 ml-8 ">
+          <div className=" w-1/2 px-2 ">
+            <ProgressBar />
+          </div>
+          <div className=" w-1/2 px-2 ">
             <ProgressBar />
           </div>
           {/* <div className="w-1/3 px-2">

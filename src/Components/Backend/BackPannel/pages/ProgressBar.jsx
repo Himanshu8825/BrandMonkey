@@ -31,28 +31,28 @@ export default function DoughnutChartDemo() {
   }, []);
 
   return (
-    <div className=" w-[800px] h-[260px] px-28 gradient rounded-xl  border border-[#F5CD15] flex   justify-between relative">
+    <div className="!w-[280px] h-[250px] px-28 gradient rounded-xl border border-[#F5CD15] flex justify-between relative">
       <div>
-        <div className="absolute  tracking-[0.01em] font-semibold flex items-center w-[220px] h-5 text-white top-1">
+        <div className="absolute tracking-[0.01em] font-semibold flex items-center w-[220px] h-5 text-white top-1">
           Total Ticket Raised
         </div>
-        <div className="card w-[120px] h-[50px] absolute left-2  my-6 ">
+        <div className="card w-[140px] h-[50px] absolute left-8 my-10">
           <Chart type="doughnut" data={chartData} options={chartOptions} />
         </div>
       </div>
 
-      <div className="text-white flex flex-col    ">
-        <div className="border-l-4 border-[#F5CD15]  ">
+      <div className="text-white flex flex-col p-0">
+        <div className="border-l-4 border-[#F5CD15]">
           <p className="text-sm font-light">Solved Ticket</p>
           <span className="font-bold text-xl">50</span>
         </div>
-        <div className="border-l-4  border-[#2e2e2e]">
+        <div className="border-l-4 border-[#2e2e2e]">
           <p className="text-sm font-light">In Progress</p>
           <span className="font-bold text-xl">45</span>
         </div>
-        <div className="border-l-4  border-[#969696]">
+        <div className="border-l-4 border-[#969696]">
           <p className="text-sm font-light">In Pending</p>
-          <span className=" font-medium text-lg">5</span>
+          <span className="font-medium text-lg">5</span>
         </div>
       </div>
 

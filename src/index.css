@@ -24,6 +24,10 @@ body {
   background-color: #f5cd15 !important;
 }
 
+.BR{
+  border-radius: 1px solid #f5cd15;
+}
+
 /*
 !Gredient Color
 */
@@ -64,100 +68,125 @@ body {
   background-color: transparent;
   color: white;
   border-radius: 1rem;
-  /* Remove the margin and use padding instead */
-  padding: 1%;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  line-height: 1.15rem;
   border: 1px solid #f5cd15;
-  height: 239px !important;
-  width: 400px !important;
-  overflow: hidden;
+  line-height: 1.15rem;
+  height: auto; /* Allow height to adjust based on content */
 }
 
-/* height padding margin width using tailwind? */
-
-.react-calendar__navigation button:enabled:hover,
-.react-calendar__navigation button:enabled:focus {
-  background-color: transparent;
+/* Adjust styles for tile size */
+.react-calendar__tile {
+  width: calc(100% / 7); /* Ensure each tile takes up equal space */
+  height: 28px; /* Adjust height as needed */
+  line-height: 5px; /* Center content vertically */
+  color: #ffffff;
+  font-weight: 500;
 }
 
-.react-calendar__tile:enabled:hover,
-.react-calendar__tile:enabled:focus {
-  background: transparent;
-  border-radius: 6rem;
-}
-
-/* Add this rule to maintain rectangle shape for active state */
-.react-calendar__tile:enabled:active,
-.react-calendar__tile:enabled:focus,
-.react-calendar__tile:enabled:hover {
-  border-radius: 9rem;
-}
-
-/* Override active state styles for background color */
-.react-calendar__tile--active:enabled:active,
-.react-calendar__tile--active:enabled:focus,
-.react-calendar__tile--active:enabled:hover {
-  border-radius: 9rem; /* Adjust border-radius as needed */
-}
-
-eact-calendar__tile:enabled:hover,
-.react-calendar__tile:enabled:focus {
-  background: #f5cd15;
-  border-radius: 9rem;
-  /* padding: -10%; */
-  color: black;
-}
-
-abbr {
-  text-decoration: none;
-}
-
+/* Modify styles for weekend days */
 .react-calendar__month-view__days__day--weekend {
   color: white;
 }
 
+/* Modify styles for weekdays */
 .react-calendar__month-view__weekdays__weekday {
   font-weight: normal;
+  color: #ffffff;
+}
+
+abbr[title] {
+  text-decoration: none;
   color: #b5bec6;
+}
+
+/* Adjust active state styles */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  /* background: #f5cd15; */
+  border-radius: 9rem;
+  color: rgb(255, 255, 255);
+}
+
+/* .react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+ none
+
+} */
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #f5cd15;
+  color: none;
+  border-radius: none;
+}
+.react-calendar__tile--now {
+  background: #f5cd15;
+  border-radius: 5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: none;
+}
+
+.react-calendar__tile--active {
+  background: #f5cd15;
+  border-radius: 50%;
+  font-weight: none;
+  color: none;
+  padding: 0;
+}
+
+.react-calendar__navigation button {
+  color: white;
+  min-width: none;
+  background: none;
+  font-size: none;
+  margin-top: none;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: none;
+}
+
+.react-calendar__navigation button[disabled] {
+  background-color: none;
 }
 
 /*! Calender CSS End*/
 
-/* For small screens and above (640px and above) */
-@media (min-width: 640px) {
-  .gradient {
-    width: 100%; /* Set width to 100% to occupy full width */
-    height: auto; /* Let height adjust according to content */
-    max-width: 328px; /* Set maximum width */
-    padding: 2rem; /* Adjust padding for better spacing */
-  }
-}
-
-/* For medium screens and above (768px and above) */
-@media (min-width: 768px) {
-  .gradient {
-    /* Your styles for medium screens (md) */
-  }
-}
-
-/* For large screens and above (1024px and above) */
-@media (min-width: 1024px) {
-  .gradient {
-    /* Your styles for large screens (lg) */
-  }
-}
-
-/* For extra-large screens and above (1280px and above) */
-@media (min-width: 1280px) {
-  .gradient {
-    /* Your styles for extra-large screens (xl) */
-  }
-}
-
-/* For 2 extra-large screens and above (1536px and above) */
-@media (min-width: 1536px) {
-  .gradient {
-    /* Your styles for 2 extra-large screens (2xl) */
-  }
+.notes {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 102, 102, 1) 100%
+  );
+  /* For older browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 102, 102, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 102, 102, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 102, 102, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 102, 102, 1) 100%
+  );
+  /* Adding fallback color */
+  background-color: rgba(102, 102, 102, 1);
+  /* Ensuring proper rendering */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#666666',GradientType=0 );
 }

@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// tailwind.config.js
+
+module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -13,35 +14,17 @@ export default {
         "base-gray-80": "#4a5660",
         "secondary-100": "#f04d23",
       },
-      spacing: {},
       fontFamily: {
-        montserrat: "Montserrat",
-        poppins: "Poppins",
-        inherit: "inherit",
-        inter: "Inter",
-        h5: "'Avenir Next LT Pro'",
+        poppins: ["Poppins", "sans-serif"],
       },
-      borderRadius: {
-        "6xl": "25px",
-        "8xl-9": "27.9px",
-        "10xl": "29px",
+      screens: {
+        xs: "480px",
+        ss: "620px",
+        sm: "768px",
+        md: "1060px",
+        lg: "1200px",
+        xl: "1700px",
       },
-      borderColor: (theme) => ({
-        "bm-primary": theme("colors.bm-primary"),
-        // Define other custom border colors here if needed
-      }),
-    },
-    fontSize: {
-      base: "1rem",
-      sm: "0.875rem",
-      "3xl": "1.375rem",
-      mini: "0.938rem",
-      lg: "1.125rem",
-      xs: "0.75rem",
-      xl: "1.25rem",
-      "16xl": "2.188rem",
-      "3xs": "0.625rem",
-      inherit: "inherit",
     },
   },
   corePlugins: {
