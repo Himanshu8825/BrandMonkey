@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Avenir+Next+LT+Pro:wght@400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+.background {
+  background-color: rgba(255, 255, 255, 30%);
+}
+
+#yearly {
+  color: red !important;
+  background-color: #f5cd15 !important;
+}
+
+/*
+!Gredient Color
+*/
+
+.gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(32, 31, 33, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  /* For webkit (Safari, Chrome) */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.3),
+    rgba(32, 31, 33, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  /* For Mozilla Firefox */
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.3),
+    rgba(32, 31, 33, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  /* For Opera */
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.3),
+    rgba(32, 31, 33, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+
+/*! Calender CSS Starts*/
+.react-calendar {
+  box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+  border-radius: 1rem;
+  /* Remove the margin and use padding instead */
+  padding: 1%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  line-height: 1.15rem;
+  border: 1px solid #f5cd15;
+  height: 239px !important;
+  width: 400px !important;
+  overflow: hidden;
+}
+
+/* height padding margin width using tailwind? */
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: transparent;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: transparent;
+  border-radius: 6rem;
+}
+
+/* Add this rule to maintain rectangle shape for active state */
+.react-calendar__tile:enabled:active,
+.react-calendar__tile:enabled:focus,
+.react-calendar__tile:enabled:hover {
+  border-radius: 9rem;
+}
+
+/* Override active state styles for background color */
+.react-calendar__tile--active:enabled:active,
+.react-calendar__tile--active:enabled:focus,
+.react-calendar__tile--active:enabled:hover {
+  border-radius: 9rem; /* Adjust border-radius as needed */
+}
+
+eact-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #f5cd15;
+  border-radius: 9rem;
+  /* padding: -10%; */
+  color: black;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: white;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-weight: normal;
+  color: #b5bec6;
+}
+
+/*! Calender CSS End*/
+
+/* For small screens and above (640px and above) */
+@media (min-width: 640px) {
+  .gradient {
+    width: 100%; /* Set width to 100% to occupy full width */
+    height: auto; /* Let height adjust according to content */
+    max-width: 328px; /* Set maximum width */
+    padding: 2rem; /* Adjust padding for better spacing */
+  }
+}
+
+/* For medium screens and above (768px and above) */
+@media (min-width: 768px) {
+  .gradient {
+    /* Your styles for medium screens (md) */
+  }
+}
+
+/* For large screens and above (1024px and above) */
+@media (min-width: 1024px) {
+  .gradient {
+    /* Your styles for large screens (lg) */
+  }
+}
+
+/* For extra-large screens and above (1280px and above) */
+@media (min-width: 1280px) {
+  .gradient {
+    /* Your styles for extra-large screens (xl) */
+  }
+}
+
+/* For 2 extra-large screens and above (1536px and above) */
+@media (min-width: 1536px) {
+  .gradient {
+    /* Your styles for 2 extra-large screens (2xl) */
+  }
+}
