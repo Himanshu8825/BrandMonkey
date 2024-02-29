@@ -12,7 +12,7 @@ import { TfiMenuAlt } from "react-icons/tfi";
 const Navbar = () => {
   return (
     <div>
-      <div className="absolute left-0 w-10 top-[-10%] h-full flex justify-center items-center">
+      <div className="absolute left-0 w-12 top-[-10%] h-full flex justify-center items-center">
         <NavIcon />
       </div>
       <div className="z-1 absolute flex flex-col left-2 top-[24%]">

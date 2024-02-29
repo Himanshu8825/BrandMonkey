@@ -31,17 +31,20 @@ export default function DoughnutChartDemo() {
   }, []);
 
   return (
-    <div className="!w-[280px] h-[250px] px-28 gradient rounded-xl border border-[#F5CD15] flex justify-between relative">
+    <div
+      id="progress"
+      className=" BR gradient rounded-xl flex justify-between relative"
+    >
       <div>
-        <div className="absolute tracking-[0.01em] font-semibold flex items-center w-[220px] h-5 text-white top-1">
+        <div className="ml-14 px-8 mt-1.5 font-semibold text-white">
           Total Ticket Raised
         </div>
-        <div className="card w-[140px] h-[50px] absolute left-8 my-10">
+        <div className="card w-[100px] h-[40px] absolute left-8 my-2">
           <Chart type="doughnut" data={chartData} options={chartOptions} />
         </div>
       </div>
 
-      <div className="text-white flex flex-col p-0">
+      <div className="text-white flex flex-col " id="progress-text">
         <div className="border-l-4 border-[#F5CD15]">
           <p className="text-sm font-light">Solved Ticket</p>
           <span className="font-bold text-xl">50</span>

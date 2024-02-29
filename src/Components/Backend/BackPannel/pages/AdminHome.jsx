@@ -1,43 +1,52 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Card from "./Card";
 import Notes from "./Notes";
 import Calender from "./Calender";
-import Card from "./Card";
 import ProgressBar from "./ProgressBar";
+import Header from "./Header";
 
 const AdminHome = () => {
   return (
-    <div className="bg-[#F5CD15]   flex">
-      <div className="w-1/12">
+    <div className="bg-[#F5CD15] flex">
+      <div className="w-[10%]">
         <Navbar />
       </div>
 
-      <div className="flex-1 h-screen rounded-tl-[30px] rounded-bl-[30px] bg-black  grid grid-flow-cols">
-        <div className="flex justify-between p-8">
-          <div className="w-1/3 px-2">
+      <div id="container" className="rounded-tl-[30px] rounded-bl-[30px]">
+        <div className="header2 ">
+          <Header />
+        </div>
+        <div id="container2" className="grid grid-cols-3 gap-3">
+          {/* First row */}
+          <div className="w-full">
             <Card />
           </div>
-          <div className="w-1/3 px-2">
+          <div className="w-full">
             <Card />
           </div>
-          <div className="w-1/3 px-2">
+          <div className="w-full">
             <Notes />
           </div>
-        </div>
 
-        <div className="flex justify-between flex-1 ml-8 ">
-          <div className=" w-1/2 px-2 ">
-            <ProgressBar />
-          </div>
-          <div className=" w-1/2 px-2 ">
-            <ProgressBar />
-          </div>
-          {/* <div className="w-1/3 px-2">
+          {/* Second row */}
+          <div className="w-full">
             <Card />
           </div>
-          <div className="w-1/3 px-2">
+          <div className="w-full">
             <Card />
-          </div> */}
+          </div>
+          <div className="w-full">
+            <Calender />
+          </div>
+
+          {/* Third row */}
+          <div className="w-full">
+            <ProgressBar />
+          </div>
+          <div className="w-full " id="progress2">
+            <ProgressBar />
+          </div>
         </div>
       </div>
     </div>
