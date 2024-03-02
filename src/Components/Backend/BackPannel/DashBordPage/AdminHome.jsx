@@ -7,9 +7,11 @@ import Header from "./Header";
 
 const AdminHome = () => {
   return (
-    <div className="bg-[#F5CD15] flex">
-      <div className="w-[10%]">
-        <Navbar />
+    <div className=" flex bg-[#f5cd15]">
+      <div className="w-[15%]   ">
+        <span className="">
+          <Navbar />
+        </span>
       </div>
 
       <div id="container" className="rounded-tl-[30px] rounded-bl-[30px]">

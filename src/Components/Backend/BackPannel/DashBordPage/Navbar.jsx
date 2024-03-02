@@ -1,5 +1,5 @@
 import React from "react";
-import { NavIcon } from "../../../Icon.jsx";
+import { BrandIcon } from "../../../Icon.jsx";
 import {
   IoIosArrowDropright,
   IoMdPeople,
@@ -11,33 +11,43 @@ import { TfiMenuAlt } from "react-icons/tfi";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="absolute left-0 w-12 top-[-10%] h-full flex justify-center items-center">
-        <div className="">
-          <NavIcon />
+    <div className=" dashbord ">
+      <div className=" absolute top-[25%] ml-3">
+        <div className="flex gap-2">
+          <IoIosArrowDropright className="text-white text-2xl" />
         </div>
       </div>
-      <div className="z-1 absolute flex flex-col left-2 top-[24%]">
-        <IoIosArrowDropright className="text-white text-lg" />
+
+      <div className=" absolute  top-[32%]  ml-3">
+        <div className="flex gap-2">
+          <MdDashboard className="text-white text-xl" />
+        </div>
       </div>
-      <div className="z-1 absolute flex flex-col left-2 top-[32%]">
-        <MdDashboard className="text-white text-md" />
+      <div className=" absolute  top-[40%] ml-3">
+        <div className="flex gap-2">
+          <FaAddressCard className="text-white text-xl" />
+        </div>
+      </div>
+      <div className=" absolute  top-[48%] ml-3">
+        <div className="flex gap-2">
+          <IoMdPeople className="text-white text-xl" />
+        </div>
+      </div>
+      <div className=" absolute  top-[56%] ml-3">
+        <div className="flex gap-2">
+          <TfiMenuAlt className="text-white text-xl" />
+        </div>
+      </div>
+      <div className=" absolute  top-[64%] ml-3">
+        <div className="flex gap-2">
+          <FaRegEdit className="text-white text-xl" />
+        </div>
       </div>
 
-      <div className="z-1 absolute flex flex-col left-2 top-[40%]">
-        <FaAddressCard className="text-white text-md" />
-      </div>
-      <div className="z-1 absolute flex flex-col left-2 top-[48%]">
-        <IoMdPeople className="text-white text-md" />
-      </div>
-      <div className="z-1 absolute flex flex-col left-2 top-[56%]">
-        <TfiMenuAlt className="text-white text-md" />
-      </div>
-      <div className="z-1 absolute flex flex-col left-2 top-[64%]">
-        <FaRegEdit className="text-white text-md" />
-      </div>
-      <div className="z-1 absolute flex flex-col left-1.5 top-[72%]">
-        <IoMdCheckmarkCircle className="text-white text-xl" />
+      <div className=" absolute  left-0 top-[72%] ml-2.5">
+        <div className="flex gap-2">
+          <IoMdCheckmarkCircle className="text-white text-2xl" />
+        </div>
       </div>
     </div>
   );
