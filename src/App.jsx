@@ -1,13 +1,18 @@
 import React from "react";
-import Navbar from "./Components/Backend/BackPannel/pages/Navbar";
-import AdminHome from "./Components/Backend/BackPannel/pages/AdminHome";
-import Admin from "./Components/Backend/BackPannel/pages/Admin";
+import MyClient from "./Components/Backend/BackPannel/ClientPage/MyClient";
+import TotalEmploye from "./Components/Backend/BackPannel/TotalEmp/TotalEmploye";
+import { Route, Routes } from "react-router-dom";
+import AdminHome from "./Components/Backend/BackPannel/DashBordPage/AdminHome";
+import MyEmployee from "./Components/Backend/BackPannel/MyEmployee/MyEmployee";
 
 const App = () => {
   return (
-    <div>
-      <AdminHome />
-    </div>
+    <Routes>
+      <Route path="/" element={<AdminHome />} />
+      <Route path="/myclient" element={<MyClient />} />
+      <Route path="/myemp" element={<MyEmployee />} />
+      <Route path="/allemp" element={<TotalEmploye />} />
+    </Routes>
   );
 };
 

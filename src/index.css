@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Avenir+Next+LT+Pro:wght@400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +14,10 @@ body {
 
 .background {
   background-color: rgba(255, 255, 255, 30%);
+}
+
+.nav-bar{
+  background-color: black;
 }
 
 #yearly {
@@ -42,7 +43,10 @@ body {
   width: 100%;
   height: 100vh;
   background-color: black;
-  display: flex;
+}
+
+#progress2 {
+  margin-left: 145px;
 }
 
 #container2 {
@@ -162,6 +166,7 @@ body {
     rgba(32, 31, 33, 0.2),
     rgba(255, 255, 255, 0.2)
   );
+  backdrop-filter: blur(4px);
 }
 
 /*! Calender CSS Starts*/
@@ -293,4 +298,150 @@ abbr[title] {
   background-color: rgba(102, 102, 102, 1);
   /* Ensuring proper rendering */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#666666',GradientType=0 );
+}
+
+.parent {
+  background: #f5cd15;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.child {
+  width: 20%;
+  height: 100vh;
+  background: #f5cd15;
+}
+
+.child2 {
+  width: 80%;
+  height: 100vh;
+  background: black;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+#btn {
+  background-color: black;
+  /* box-shadow: 0 0 10px #f5cd15; */
+
+  border-left: 1px solid #f5cd15;
+  border-right: 1px solid #f5cd15;
+  border-bottom: 1px solid #f5cd15;
+  /* border-top: 0.5px solid #f5cd15; */
+}
+
+#btn2 {
+  background-color: black;
+  border: 1px solid #f5cd15;
+  cursor: pointer;
+  color: #f5cd15;
+}
+
+#searchbox {
+  position: absolute;
+  left: 25rem;
+  width: 25%;
+  height: 7%;
+}
+
+.input-field {
+  border: none;
+  padding: 12px;
+  padding-left: 45px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(32, 31, 33, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  /* For webkit (Safari, Chrome) */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.3),
+    rgba(32, 31, 33, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  /* For Mozilla Firefox */
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.3),
+    rgba(32, 31, 33, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  /* For Opera */
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.3),
+    rgba(32, 31, 33, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(5px);
+}
+
+.child2 input:-ms-input-placeholder {
+  padding-left: 20px;
+  color: red;
+}
+
+#second-btn {
+  background: rgba(255, 255, 255, 0.25);
+  /* box-shadow: 0 8px 32px 0 rgba(167, 168, 182, 0.37); */
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#card-grid {
+  display: inline-grid;
+}
+
+.card-item {
+  width: 280px;
+  height: 120px;
+}
+
+.card-item2 {
+  width: 470px;
+  height: 350px;
+}
+
+.cardglow {
+  box-shadow: 0 0 42px 6px #f5cd15;
+}
+
+/* styles.css */
+
+.border-gradient {
+  border: 1px solid #f5cc15d4;
+}
+
+/* styles.css */
+
+.custom-background {
+  background-image: linear-gradient(
+    to right top,
+    #ffffff,
+    #d0d0d0,
+    #a3a3a4,
+    #787879,
+    #505051,
+    #505051,
+    #505051,
+    #505051,
+    #787879,
+    #a3a3a4,
+    #d0d0d0,
+    #ffffff
+  );
+}
+#view-more {
+  margin-left: 50px;
+  margin-top: -10px;
+  height: 55px;
+  border-radius: 50px;
+}
+
+.down-arrow {
+  background-color: #f5cd15;
 }

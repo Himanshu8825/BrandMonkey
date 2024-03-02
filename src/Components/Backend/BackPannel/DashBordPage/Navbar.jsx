@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <div>
       <div className="absolute left-0 w-12 top-[-10%] h-full flex justify-center items-center">
-        <NavIcon />
+        <div className="">
+          <NavIcon />
+        </div>
       </div>
       <div className="z-1 absolute flex flex-col left-2 top-[24%]">
         <IoIosArrowDropright className="text-white text-lg" />
