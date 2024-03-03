@@ -6,7 +6,9 @@ import AdminHome from "./Components/Backend/BackPannel/DashBordPage/AdminHome";
 import MyEmployee from "./Components/Backend/BackPannel/MyEmployee/MyEmployee";
 import AllEmployes from "./Components/Backend/BackPannel/AllEmployes/AllEmploye";
 import AllServices from "./Components/Backend/BackPannel/AllServices/AllServices";
-import AllClient from "./Components/Backend/BackPannel/AllClient/AllClient";
+import AllClient from "./Components/Backend/BackPannel/AllClient/CreateClient";
+import CreateClient from "./Components/Backend/BackPannel/AllClient/CreateClient";
+import SubmitClient from "./Components/Backend/BackPannel/SubmitClient/SubmitClient";
 
 const App = () => {
   return (
@@ -18,6 +20,9 @@ const App = () => {
       <Route path="/allemp" element={<AllEmployes />} />
       <Route path="/allserve" element={<AllServices />} />
       <Route path="/allclient" element={<AllClient />} />
+      <Route path="/createcli" element={<CreateClient />} />
+      <Route path="/submitemp" element={<SubmitClient />} />
+      
     </Routes>
   );
 };

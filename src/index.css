@@ -353,9 +353,18 @@ abbr[title] {
   border: 1px solid rgba(255, 255, 255, 0.558);
 }
 
+#child4 {
+  position: relative;
+  width: 90%;
+  /* height: auto; */
+  height: 80%;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.558);
+}
+
 .formPara {
   position: absolute;
-  top: -5px;
+  top: 15px;
   left: 20rem;
 }
 

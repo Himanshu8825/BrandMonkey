@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrandIcon } from "../../../Icon";
 import Navbar from "./Navbar";
 
-const TotalEmploye = () => {
+const CreateClient = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -315,4 +315,4 @@ const TotalEmploye = () => {
   );
 };
 
-export default TotalEmploye;
+export default CreateClient;
