@@ -510,6 +510,11 @@ abbr[title] {
   height: 120px;
 }
 
+#card-item2 {
+  width: 95%;
+  height: 40vh;
+}
+
 .card-item2 {
   width: 470px;
   height: 350px;

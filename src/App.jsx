@@ -9,6 +9,8 @@ import AllServices from "./Components/Backend/BackPannel/AllServices/AllServices
 import AllClient from "./Components/Backend/BackPannel/AllClient/CreateClient";
 import CreateClient from "./Components/Backend/BackPannel/AllClient/CreateClient";
 import SubmitClient from "./Components/Backend/BackPannel/SubmitClient/SubmitClient";
+import AdminClient from './Components/Backend/BackPannel/AdminClient/AdminClient'
+
 
 const App = () => {
   return (
@@ -22,6 +24,7 @@ const App = () => {
       <Route path="/allclient" element={<AllClient />} />
       <Route path="/createcli" element={<CreateClient />} />
       <Route path="/submitemp" element={<SubmitClient />} />
+      <Route path="/admincli" element={<AdminClient />} />
       
     </Routes>
   );
