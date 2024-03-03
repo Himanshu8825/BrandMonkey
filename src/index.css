@@ -86,6 +86,10 @@ body {
   width: 0px; /* Set the width of the scrollbar */
 }
 
+.child3::-webkit-scrollbar {
+  width: 0px;
+}
+
 /* Track */
 #notes::-webkit-scrollbar-track {
   /* background: #f1f1f1; */
@@ -339,6 +343,22 @@ abbr[title] {
   border-bottom-left-radius: 2rem;
 }
 
+.child3 {
+  /* Add relative positioning */
+  position: relative;
+  width: 95%;
+  /* height: auto; */
+  height: 88%;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.558);
+}
+
+.formPara {
+  position: absolute;
+  top: -5px;
+  left: 20rem;
+}
+
 #btn {
   background-color: black;
   /* box-shadow: 0 0 10px #f5cd15; */
@@ -462,11 +482,6 @@ abbr[title] {
   color: white;
   font-family: sans-serif;
   font-size: 15px;
-}
-
-.child2 input:-ms-input-placeholder {
-  padding-left: 20px;
-  color: red;
 }
 
 #second-btn {

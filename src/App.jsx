@@ -6,6 +6,7 @@ import AdminHome from "./Components/Backend/BackPannel/DashBordPage/AdminHome";
 import MyEmployee from "./Components/Backend/BackPannel/MyEmployee/MyEmployee";
 import AllEmployes from "./Components/Backend/BackPannel/AllEmployes/AllEmploye";
 import AllServices from "./Components/Backend/BackPannel/AllServices/AllServices";
+import AllClient from "./Components/Backend/BackPannel/AllClient/AllClient";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/totalemp" element={<TotalEmploye />} />
       <Route path="/allemp" element={<AllEmployes />} />
       <Route path="/allserve" element={<AllServices />} />
+      <Route path="/allclient" element={<AllClient />} />
     </Routes>
   );
 };

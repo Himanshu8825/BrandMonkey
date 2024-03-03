@@ -54,21 +54,21 @@ const Card = () => {
           </div>
         </div>
 
-        <div className="flex justify-around  text-xl mt-[9rem] py-2 g">
+        <div className="flex justify-around  text-xl mt-[9rem] py-2  ">
           <div>
-            <button className="flex items-center bg-black text-[#f5cc15d4] rounded-lg px-4 py-2  ">
+            <button className="flex items-center bg-black text-[#f5cc15d4] rounded-lg px-4 py-2  cursor-pointer ">
               <img src={CardProfile2} width={20} height={20} />
               <p className="m-0 ml-2 text-base">Alot Client</p>
             </button>
           </div>
           <div>
-            <button className="flex items-center bg-black text-[#f5cc15d4] rounded-lg px-4 py-2">
+            <button className="flex items-center bg-black text-[#f5cc15d4] rounded-lg px-4 py-2 cursor-pointer">
               <MdModeEdit />
               <p className="m-0 ml-2 text-base">Edit</p>
             </button>
           </div>
           <div>
-            <button className="flex items-center bg-black text-[#f5cc15d4] rounded-lg px-4 py-2">
+            <button className="flex items-center bg-black text-[#f5cc15d4] rounded-lg px-4 py-2 cursor-pointer">
               <RiDeleteBin6Line />
               <p className="m-0 ml-2 text-base">Delete</p>
             </button>

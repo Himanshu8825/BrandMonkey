@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
       )}
       {!showNavbar && (
-        <div className="fixed top-0 left-0 w-[22%] h-screen  bg-black opacity-100">
+        <div className="fixed top-0 left-0 w-[22%] h-screen  bg-black opacity-100 cursor-pointer">
           <GiHamburgerMenu
             className=" text-white"
             onClick={() => setShowNavbar(true)}

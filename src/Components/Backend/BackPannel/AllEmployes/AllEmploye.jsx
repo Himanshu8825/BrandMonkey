@@ -28,7 +28,7 @@ const TotalEmploye = () => {
             </div>
           </div>
           <div className="flex justify-between mr-8 ml-8 mt-[4rem]   ">
-            <div className="">
+            <div className=" cursor-pointer">
               <Button name={"+ Add New Clients"} />
             </div>
             <div>
