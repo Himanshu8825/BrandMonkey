@@ -9,8 +9,10 @@ import AllServices from "./Components/Backend/BackPannel/AllServices/AllServices
 import AllClient from "./Components/Backend/BackPannel/AllClient/CreateClient";
 import CreateClient from "./Components/Backend/BackPannel/AllClient/CreateClient";
 import SubmitClient from "./Components/Backend/BackPannel/SubmitClient/SubmitClient";
-import AdminClient from './Components/Backend/BackPannel/AdminClient/AdminClient'
-
+import AdminClient from "./Components/Backend/BackPannel/AdminClient/AdminClient";
+import RaisedComplained from "./Components/Backend/BackPannel/RaisedComplained/RaisedComplained";
+import Resolve from "./Components/Backend/BackPannel/ResolvedComplained/Resolve";
+import AdminSolve from "./Components/Backend/BackPannel/AdminSolve/AdminSolve";
 
 const App = () => {
   return (
@@ -24,8 +26,10 @@ const App = () => {
       <Route path="/allclient" element={<AllClient />} />
       <Route path="/createcli" element={<CreateClient />} />
       <Route path="/submitemp" element={<SubmitClient />} />
-      <Route path="/admincli" element={<AdminClient />} />
-      
+      <Route path="/admincli" element={<AdminClient />} /> //work not done here
+      <Route path="/raisedcomplain" element={<RaisedComplained />} />
+      <Route path="/resolved" element={<Resolve />} />
+      <Route path="/adminsolve" element={<AdminSolve />} />
     </Routes>
   );
 };

@@ -530,6 +530,11 @@ abbr[title] {
   border: 1px solid #f5cc15d4;
 }
 
+#excard {
+  background-color: red;
+  width: 96%;
+}
+
 /* styles.css */
 
 .custom-background {

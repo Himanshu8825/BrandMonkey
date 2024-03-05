@@ -17,11 +17,16 @@ const AdminClient = () => {
           </div>
           <Navbar />
         </div>
-        <div className="child2">
-          <div>
-            {/* <ExchangeCard /> */}
-            {/* <DeliverCard /> */}
-            {/* <ListCard /> */}
+        <div className="child2 overflow-y-scroll">
+          <div className="card-container">
+            <ExchangeCard />
+          </div>
+          <div className="card-container">
+            <DeliverCard />
+          </div>
+          <div className="list-cards">
+            <ListCard />
+            <ListCard />
           </div>
         </div>
       </div>

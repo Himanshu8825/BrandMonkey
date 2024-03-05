@@ -16,7 +16,6 @@ const ListCard = () => {
           </p>
         </div>
       </div>
-      <button></button>
     </div>
   );
 };

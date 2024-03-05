@@ -591,3 +591,46 @@ export const AllEmp = () => (
     />
   </svg>
 );
+
+export const ArchiveBook = () => (
+  <svg
+    width="22"
+    height="22"
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M28 9.33561V22.6689C28 26.6689 26 29.3356 21.3333 29.3356H10.6667C6 29.3356 4 26.6689 4 22.6689V9.33561C4 5.33561 6 2.66895 10.6667 2.66895H21.3333C26 2.66895 28 5.33561 28 9.33561Z"
+      stroke="black"
+      strokeWidth="2"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M20.6667 2.66895V13.1489C20.6667 13.7356 19.9733 14.0289 19.5467 13.6423L16.4534 10.789C16.2001 10.549 15.8 10.549 15.5467 10.789L12.4534 13.6423C12.0267 14.0289 11.3334 13.7356 11.3334 13.1489V2.66895H20.6667Z"
+      stroke="black"
+      strokeWidth="2"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M17.6666 18.6689H23.3333"
+      stroke="black"
+      strokeWidth="2"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12 24.002H23.3333"
+      stroke="black"
+      strokeWidth="2"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
