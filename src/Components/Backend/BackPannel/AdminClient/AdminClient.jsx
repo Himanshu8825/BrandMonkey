@@ -17,16 +17,20 @@ const AdminClient = () => {
           </div>
           <Navbar />
         </div>
-        <div className="child2 overflow-y-scroll">
-          <div className="card-container">
+        <div className="child2 overflow-y-scroll ">
+          <div className="  ">
             <ExchangeCard />
           </div>
-          <div className="card-container">
+          <div className="">
             <DeliverCard />
           </div>
-          <div className="list-cards">
-            <ListCard />
-            <ListCard />
+          <div className="flex  ">
+            <span className="w-full">
+              <ListCard name={"Rase Ticket"} title={"Ticket Rase List:"} />
+            </span>
+            <span className="w-full">
+              <ListCard name={"Add MOM"} title={"MOM List:"} />
+            </span>
           </div>
         </div>
       </div>

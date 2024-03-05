@@ -7,7 +7,7 @@ const Button = ({ name }) => {
         <button
           type="button"
           id="btn2"
-          class="text-white  font-medium rounded-lg text-base  px-8 py-2 text-center me-2 mb-2"
+          className="text-white  font-medium rounded-lg text-base  px-8 py-2 text-center me-2 mb-2"
         >
           {name}
         </button>

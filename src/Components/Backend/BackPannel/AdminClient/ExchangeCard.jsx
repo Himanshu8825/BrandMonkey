@@ -4,23 +4,23 @@ import ClientProfile from "../../../../../public/ClientProfile.png";
 
 const ExchangeCard = () => {
   return (
-    <div className="flex flex-col items-center mt-2 w-full h-23 ">
-      <p className="text-white font-poppins font-medium text-xl mt-4 ml-[-42rem]">
+    <div className="flex flex-col items-center mt-2">
+      <p className="text-white font-poppins font-medium text-xl mt-[1rem] ml-[-46rem]">
         Client Company Details:
       </p>
-      <div className="border-gradient rounded-3xl m-0 flex flex-col-reverse mt-4 " id="excard">
-        <p className="text-white text-2xl font-poppins font-medium pl-8 mt-1 relative top-[-16rem]">
+      <div className="border-gradient rounded-3xl  mt-4 w-[96%] ">
+        <p className="text-white text-2xl font-poppins font-medium pl-8 mt-2">
           Exchange 22
         </p>
         <div className="relative">
           <img
             src={ClientProfile}
             alt=""
-            className="relative top-[-4rem] left-[22rem]"
+            className="absolute top-[-8rem] left-[50%] transform -translate-x-1/2"
             height={120}
             width={120}
           />
-          <div className="w-full  gradient rounded-br-3xl rounded-bl-3xl pt-1 flex justify-around items-center">
+          <div className="gradient rounded-br-3xl rounded-bl-3xl pt-1 flex justify-around items-center">
             <div className="w-[48%]">
               <p className="text-white font-poppins font-medium ml-4">
                 Name - Exchange 22 Pvt Ltd.
