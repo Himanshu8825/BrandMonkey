@@ -16,6 +16,7 @@ import AdminSolve from "./Components/Backend/BackPannel/AdminSolve/AdminSolve";
 import ClientDetails from "./Components/Backend/BackPannel/ClientDetails/ClientDetails";
 import ProgressClient from "./Components/Backend/BackPannel/ProgressClient/ProgressClient";
 import All from "./All";
+import UpdateTask from "./Components/Backend/BackPannel/TaskUpdate/UpdateTask";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
       <Route path="/adminsolve" element={<AdminSolve />} />
       <Route path="/clidetails" element={<ClientDetails />} />
       <Route path="/cliprogreess" element={<ProgressClient />} />
+      <Route path="/updatetask" element={<UpdateTask />} />
     </Routes>
   );
 };
