@@ -520,6 +520,11 @@ abbr[title] {
   height: 350px;
 }
 
+.card-item4 {
+  width: 300px;
+  height: 250px;
+}
+
 .cardglow {
   box-shadow: 0 0 42px 6px #f5cd15;
 }
