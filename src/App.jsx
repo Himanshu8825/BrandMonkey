@@ -14,6 +14,7 @@ import RaisedComplained from "./Components/Backend/BackPannel/RaisedComplained/R
 import Resolve from "./Components/Backend/BackPannel/ResolvedComplained/Resolve";
 import AdminSolve from "./Components/Backend/BackPannel/AdminSolve/AdminSolve";
 import ClientDetails from "./Components/Backend/BackPannel/ClientDetails/ClientDetails";
+import ProgressClient from "./Components/Backend/BackPannel/ProgressClient/ProgressClient";
 import All from "./All";
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
       <Route path="/resolved" element={<Resolve />} />
       <Route path="/adminsolve" element={<AdminSolve />} />
       <Route path="/clidetails" element={<ClientDetails />} />
+      <Route path="/cliprogreess" element={<ProgressClient />} />
     </Routes>
   );
 };
