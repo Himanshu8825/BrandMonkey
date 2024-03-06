@@ -17,6 +17,7 @@ import ClientDetails from "./Components/Backend/BackPannel/ClientDetails/ClientD
 import ProgressClient from "./Components/Backend/BackPannel/ProgressClient/ProgressClient";
 import All from "./All";
 import UpdateTask from "./Components/Backend/BackPannel/TaskUpdate/UpdateTask";
+import EmployeeForm from "./Components/Backend/BackPannel/MyEmployeForm.jsx/EmployeeForm";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
       <Route path="/clidetails" element={<ClientDetails />} />
       <Route path="/cliprogreess" element={<ProgressClient />} />
       <Route path="/updatetask" element={<UpdateTask />} />
+      <Route path="/empform" element={<EmployeeForm />} />
     </Routes>
   );
 };

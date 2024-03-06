@@ -1,7 +1,6 @@
 import React from "react";
 import { BrandIcon } from "../../../Icon";
 import Navbar from "./Navbar";
-import Button from "./Button";
 import Card from "./Card";
 import { FaChevronDown } from "react-icons/fa6";
 

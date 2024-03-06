@@ -569,3 +569,7 @@ abbr[title] {
 .down-arrow {
   background-color: #f5cd15;
 }
+
+#empborder {
+  border: 1px solid white;
+}
