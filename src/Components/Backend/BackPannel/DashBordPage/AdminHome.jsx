@@ -1,34 +1,36 @@
 import React from "react";
+import { BrandIcon } from "../../../Icon";
 import Navbar from "./Navbar";
 import Card from "./Card";
-
 import ProgressBar from "./ProgressBar";
-import Header from "./Header";
 
 const AdminHome = () => {
   return (
-    <div className=" flex bg-[#f5cd15]">
-      <div className="w-[15%]   ">
-        <span className="">
-          <Navbar />
-        </span>
-      </div>
-
-      <div id="container" className="rounded-tl-[30px] rounded-bl-[30px]">
-        <div className="header2">
-          <Header />
+    <>
+      <div className="w-full h-full flex bg-[#f5cd15]">
+        <div className="w-[15%] h-full bg-[#f5cd15]">
+          <div className="ml-16">
+            <BrandIcon />
+          </div>
+          <div>
+            <Navbar />
+          </div>
         </div>
-        <div id="container2">
-          <span className="w-full">
+        <div className="w-[85%]  bg-black rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden ">
+          <div className="ml-[-3rem] mt-[-3rem]">
             <Card />
-          </span>
-
-          <div className="flex flex-wrap  items-center ">
-            <ProgressBar />
+          </div>
+          <div className="w-full  flex mb-4 gap-6">
+            <div className="w-1/2 ml-[-2rem]">
+              <ProgressBar />
+            </div>
+            <div className="w-1/2">
+              <ProgressBar />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

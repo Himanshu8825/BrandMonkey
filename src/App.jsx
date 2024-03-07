@@ -18,6 +18,8 @@ import ProgressClient from "./Components/Backend/BackPannel/ProgressClient/Progr
 import All from "./All";
 import UpdateTask from "./Components/Backend/BackPannel/TaskUpdate/UpdateTask";
 import EmployeeForm from "./Components/Backend/BackPannel/MyEmployeForm.jsx/EmployeeForm";
+import TicketRase from "./Components/Backend/PopUps/TicketRase";
+import ReviewDetail from "./Components/Backend/PopUps/ReviewDetail";
 
 const App = () => {
   return (
@@ -40,6 +42,8 @@ const App = () => {
       <Route path="/cliprogreess" element={<ProgressClient />} />
       <Route path="/updatetask" element={<UpdateTask />} />
       <Route path="/empform" element={<EmployeeForm />} />
+      <Route path="/popup1" element={<TicketRase />} />
+      <Route path="/popup2" element={<ReviewDetail />} />
     </Routes>
   );
 };

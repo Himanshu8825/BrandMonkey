@@ -16,9 +16,7 @@ body {
   background-color: rgba(255, 255, 255, 30%);
 }
 
-.nav-bar {
-  background-color: black;
-}
+
 
 #yearly {
   color: red !important;
@@ -26,7 +24,7 @@ body {
 }
 
 .BR {
-  border: 1px solid #f5cd15 !important;
+  border: 1px solid #f5cd15;
 }
 
 #card-icon {
@@ -57,12 +55,12 @@ body {
   margin-left: 195px;
 }
 
-#progress {
-  /* background-color: red; */
+/* #progress {
+  background-color: red;
   width: 140%;
   height: 75%;
   padding-left: 1rem;
-}
+} */
 
 #progress2 {
   margin-left: 145px;
@@ -426,11 +424,6 @@ abbr[title] {
 
 #para {
   margin-left: 20px;
-}
-
-.dashbord {
-  background: red !important;
-  width: 10%;
 }
 
 .navbg {

@@ -3,7 +3,7 @@ import { NotesAdd, NotesIcon } from "../../../Icon";
 
 const Notes = () => {
   return (
-    <div className="gradient w-[335px]  rounded-xl BR  mt-28 py-1 ">
+    <div className="gradient w-[300px]  rounded-xl BR  mt-28 py-1 ">
       <span className="px-3">
         <NotesIcon />
       </span>
