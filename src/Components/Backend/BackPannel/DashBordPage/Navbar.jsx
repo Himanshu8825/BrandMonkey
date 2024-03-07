@@ -10,43 +10,27 @@ import { TfiMenuAlt } from "react-icons/tfi";
 
 const Navbar = () => {
   return (
-    <div className=" bg-red-500">
-      {" "}
-      {/* Apply background color using Tailwind's bg-<color> class */}
-      <div className="absolute top-[25%] ml-3">
-        <div className="flex gap-2">
-          <IoIosArrowDropright className="text-white text-2xl" />
-        </div>
+    <div className="flex flex-col items-start justify-center mt-[5rem] gap-8 bg-black w-full sm:w-[30%] pt-8 pb-8 rounded-r-full">
+      <div className="ml-3">
+        <IoIosArrowDropright className="text-white text-2xl sm:text-xl" />
       </div>
-      <div className="absolute top-[32%] ml-3">
-        <div className="flex gap-2">
-          <MdDashboard className="text-white text-xl" />
-        </div>
+      <div className="ml-3">
+        <MdDashboard className="text-white text-xl sm:text-lg" />
       </div>
-      <div className="absolute top-[40%] ml-3">
-        <div className="flex gap-2">
-          <FaAddressCard className="text-white text-xl" />
-        </div>
+      <div className="ml-3">
+        <FaAddressCard className="text-white text-xl sm:text-lg" />
       </div>
-      <div className="absolute top-[48%] ml-3">
-        <div className="flex gap-2">
-          <IoMdPeople className="text-white text-xl" />
-        </div>
+      <div className="ml-3">
+        <IoMdPeople className="text-white text-xl sm:text-lg" />
       </div>
-      <div className="absolute top-[56%] ml-3">
-        <div className="flex gap-2">
-          <TfiMenuAlt className="text-white text-xl" />
-        </div>
+      <div className="ml-3">
+        <TfiMenuAlt className="text-white text-xl sm:text-lg" />
       </div>
-      <div className="absolute top-[64%] ml-3">
-        <div className="flex gap-2">
-          <FaRegEdit className="text-white text-xl" />
-        </div>
+      <div className="ml-3">
+        <FaRegEdit className="text-white text-xl sm:text-lg" />
       </div>
-      <div className="absolute left-0 top-[72%] ml-2.5">
-        <div className="flex gap-2">
-          <IoMdCheckmarkCircle className="text-white text-2xl" />
-        </div>
+      <div className="ml-2.5">
+        <IoMdCheckmarkCircle className="text-white text-2xl sm:text-xl" />
       </div>
     </div>
   );

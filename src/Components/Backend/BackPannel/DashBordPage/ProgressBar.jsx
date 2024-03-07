@@ -41,7 +41,7 @@ export default function ProgressBar() {
           </div>
         </div>
 
-        <div className="text-white flex flex-col m-4 p-6 relative w-full left-[2rem] top-2 ">
+        <div className="text-white flex flex-col m-4 p-6 relative w-full left-[5rem] top-0 ">
           <div className="border-l-4 border-[#F5CD15] ">
             <p className="text-sm font-light m-0">Solved Ticket</p>
             <span className="text-base">50</span>
