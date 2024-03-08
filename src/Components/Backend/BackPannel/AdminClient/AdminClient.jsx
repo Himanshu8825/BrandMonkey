@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ExchangeCard from "./ExchangeCard";
 import { BrandIcon } from "../../../Icon";
 import Button from "./Button";
@@ -28,7 +28,7 @@ const AdminClient = () => {
             <span className="w-full">
               <ListCard name={"Rase Ticket"} title={"Ticket Rase List:"} />
             </span>
-            <span className="w-full">
+            <span className="w-full z-40">
               <ListCard name={"Add MOM"} title={"MOM List:"} />
             </span>
           </div>

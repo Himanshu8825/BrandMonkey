@@ -9,8 +9,8 @@ const AdminHome = () => {
     <>
       <div className="w-full h-full flex flex-col sm:flex-row bg-[#f5cd15]">
         {/* Sidebar */}
-        <div className="w-full sm:w-[15%] bg-[#f5cd15]">
-          <div className="ml-4 sm:ml-16 mt-4 sm:mt-0">
+        <div className=" bg-[#f5cd15]">
+          <div className="ml-4  mt-4 sm:mt-0">
             <BrandIcon />
           </div>
           <div>
@@ -18,7 +18,7 @@ const AdminHome = () => {
           </div>
         </div>
         {/* Main Content */}
-        <div className="w-full sm:w-[85%] bg-black rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden">
+        <div className="w-full  bg-black rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden">
           <div className="ml-0 sm:ml-[-3rem] mt-0 sm:mt-[-3rem]">
             <Card />
           </div>

@@ -85,7 +85,7 @@ const Card = () => {
         <div className="  w-[335px] mx-3">
           <div className="BR gradient    rounded-2xl  border border-[#F5CD15] mt-9 ">
             <div className="flex justify-center items-center  flex-col mt-8">
-              <p className=" text-white font-semibold text-lg ">
+              <p className=" text-white font-semibold text-lg  ">
                 Total Clients(50)
               </p>
               <div id="card-icon" className=" ">
