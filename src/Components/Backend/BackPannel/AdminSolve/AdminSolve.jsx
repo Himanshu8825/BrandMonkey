@@ -1,20 +1,22 @@
 import React from "react";
 import Card from "./Card";
-import { BrandIcon, Notification, Setting } from "../../../Icon";
-import Navbar from "./Navbar";
+import { BrandIcon } from "../../../Icon";
+import Navbar from "../DashBordPage/Navbar";
 import { FaChevronDown } from "react-icons/fa";
 
 const AdminSolve = () => {
   return (
     <>
-      <div className="parent">
-        <div className="child">
-          <div className="ml-16">
+      <div className="w-full h-screen flex flex-col sm:flex-row bg-[#f5cd15]">
+        <div className="bg-[#f5cd15]">
+          <div className="ml-4 mt-4 sm:mt-0">
             <BrandIcon />
           </div>
-          <Navbar />
+          <div className="mt-[-3rem]">
+            <Navbar />
+          </div>
         </div>
-        <div className="child2 ">
+        <div className="w-full bg-black rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden ">
           <span className="text-white underline absolute right-[4rem] top-6 font-poppins cursor-pointer">
             Mark all as read
           </span>

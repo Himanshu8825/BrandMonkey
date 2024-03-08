@@ -9,7 +9,7 @@ const ExchangeCard = () => {
         {/* Button positioned absolutely */}
       </p>
 
-      <div className="border-gradient rounded-3xl  mt-0 w-[96%] ">
+      <div className="border-gradient rounded-3xl  mt-0 w-[90%] ">
         <p className="text-white text-2xl font-poppins font-medium pl-8 mt-4">
           Annu Garg
         </p>

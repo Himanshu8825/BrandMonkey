@@ -9,8 +9,8 @@ import { FaAddressCard } from "react-icons/fa";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 import Profile from "../../../../../public/Profile.png";
 import { IoBackspaceOutline } from "react-icons/io5";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useNavigate } from "react-router-dom";
+import Exit from "../../../../../public/Exit.png"
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -55,12 +55,14 @@ const Navbar = () => {
               <p>My Employee</p>
             </div>
           </Link>
+          <Link to="/adminsolve">
+            <div className="ml-3 flex items-center gap-3 font-semibold">
+              <IoMdCheckmarkCircle className="text-black text-3xl sm:text-xl" />
+              <p>Resolved Complaint</p>
+            </div>
+          </Link>
           <div className="ml-3 flex items-center gap-3 font-semibold">
-            <IoMdCheckmarkCircle className="text-black text-3xl sm:text-xl" />
-            <p>Resolved Complaint</p>
-          </div>
-          <div className="ml-3 flex items-center gap-3 font-semibold">
-            <IoMdCheckmarkCircle className="text-black text-3xl sm:text-xl" />
+            <img src={Exit} width={20} height={20} alt="" />
             <p>Back Panel</p>
           </div>
           <div className="ml-2.5 flex items-center gap-3 font-semibold">

@@ -565,3 +565,48 @@ a {
   text-decoration: none !important;
   color: inherit !important;
 }
+
+
+.navbar-container {
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+.navbar.closed {
+  transform: translateX(-100%);
+}
+
+.toggle-button {
+  cursor: pointer;
+}
+
+.profile {
+  margin-top: -6rem;
+  text-align: center;
+}
+
+.name {
+  margin-top: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-item p {
+  margin-left: 10px;
+}
+
+.nav-item svg {
+  font-size: 2rem;
+}

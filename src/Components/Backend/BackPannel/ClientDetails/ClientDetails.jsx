@@ -1,23 +1,23 @@
 import React from "react";
 import ExchangeCard from "./ExchangeCard";
 import { BrandIcon } from "../../../Icon";
-import Button from "./Button";
-import Navbar from "./Navbar";
-import { FaChevronDown } from "react-icons/fa";
-import DeliverCard from "./DeliverCard";
+import Navbar from "../DashBordPage/Navbar";
+import DeliverCard from "./ReviewList";
 import Card from "./Card";
 
 const ClientDetails = () => {
   return (
     <>
-      <div className="parent">
-        <div className="child">
-          <div className="ml-16">
+      <div className="w-full h-screen flex flex-col sm:flex-row bg-[#f5cd15]">
+        <div className="bg-[#f5cd15]">
+          <div className="ml-4 mt-4 sm:mt-0">
             <BrandIcon />
           </div>
-          <Navbar />
+          <div className="mt-[-3rem]">
+            <Navbar />
+          </div>
         </div>
-        <div className="child2 overflow-y-scroll ">
+        <div className="w-full bg-black rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden ">
           <div className="  ">
             <ExchangeCard />
           </div>

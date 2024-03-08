@@ -1,6 +1,7 @@
 import React from "react";
 import { ViewMore2 } from "../../../Icon";
 import CardProfile from "../../../../../public/CardProfile.png";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
@@ -29,11 +30,13 @@ const Card = () => {
         </div>
         <div className="flex text-white font-poppins m-4">
           <div className="font-medium text-lg"> Tickets:2</div>
-          <div className="flex items-center ml-auto " id="view-more">
-            <span className="text-base mr-1 cardglow">View more</span>
-            <div className="mt-2">
-              <ViewMore2 />
-            </div>
+          <div className="ml-auto flex items-center">
+            <Link to="/clidetails" className="flex items-center">
+              <span className="text-base cardglow ">View more</span>
+              <div className="mt-2">
+                <ViewMore2 />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
