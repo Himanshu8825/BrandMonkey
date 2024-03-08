@@ -492,10 +492,6 @@ abbr[title] {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-#card-grid {
-  display: inline-grid;
-}
-
 .card-item {
   width: 280px;
   height: 120px;
@@ -565,5 +561,7 @@ abbr[title] {
   border: 1px solid white;
 }
 
-
-
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}

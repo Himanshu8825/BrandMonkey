@@ -10,9 +10,11 @@ import { RiLogoutCircleRLine } from "react-icons/ri";
 import Profile from "../../../../../public/Profile.png";
 import { IoBackspaceOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
+  const navigate = useNavigate();
 
   const clickhandler = () => {
     setShowNavbar(false);
@@ -35,18 +37,24 @@ const Navbar = () => {
             </p>
           </div>
 
-          <div className="ml-3 flex items-center gap-3 font-semibold">
-            <MdDashboard className="text-black text-3xl sm:text-lg" />
-            <p>Dashbord</p>
-          </div>
-          <div className="ml-3 flex items-center gap-3 font-semibold">
-            <FaAddressCard className="text-black text-3xl sm:text-lg" />
-            <p>My Client</p>
-          </div>
-          <div className="ml-3 flex items-center gap-3 font-semibold">
-            <IoMdPeople className="text-black text-3xl sm:text-lg" />
-            <p>My Employee</p>
-          </div>
+          <Link to="/">
+            <div className="ml-3 flex items-center gap-3 font-semibold">
+              <MdDashboard className="text-black text-3xl sm:text-lg" />
+              <p>Dashbord</p>
+            </div>
+          </Link>
+          <Link to="/myclient" className="">
+            <div className="ml-3 flex items-center gap-3 font-semibold">
+              <FaAddressCard className="text-black text-3xl sm:text-lg" />
+              <p>My Client</p>
+            </div>
+          </Link>
+          <Link to="/myemp">
+            <div className="ml-3 flex items-center gap-3 font-semibold">
+              <IoMdPeople className="text-black text-3xl sm:text-lg" />
+              <p>My Employee</p>
+            </div>
+          </Link>
           <div className="ml-3 flex items-center gap-3 font-semibold">
             <IoMdCheckmarkCircle className="text-black text-3xl sm:text-xl" />
             <p>Resolved Complaint</p>
