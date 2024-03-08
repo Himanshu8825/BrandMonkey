@@ -10,7 +10,7 @@ import { RiLogoutCircleRLine } from "react-icons/ri";
 import Profile from "../../../../../public/Profile.png";
 import { IoBackspaceOutline } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
-import Exit from "../../../../../public/Exit.png"
+import Exit from "../../../../../public/Exit.png";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -61,10 +61,12 @@ const Navbar = () => {
               <p>Resolved Complaint</p>
             </div>
           </Link>
-          <div className="ml-3 flex items-center gap-3 font-semibold">
-            <img src={Exit} width={20} height={20} alt="" />
-            <p>Back Panel</p>
-          </div>
+          <Link to="/allserve">
+            <div className="ml-3 flex items-center gap-3 font-semibold">
+              <img src={Exit} width={20} height={20} alt="" />
+              <p>Back Panel</p>
+            </div>
+          </Link>
           <div className="ml-2.5 flex items-center gap-3 font-semibold">
             <RiLogoutCircleRLine className="text-black text-3xl sm:text-xl" />
             <p>Logout</p>

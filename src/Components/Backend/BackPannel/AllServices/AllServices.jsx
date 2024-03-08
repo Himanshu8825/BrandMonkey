@@ -9,14 +9,16 @@ import { FaChevronDown } from "react-icons/fa6";
 const TotalEmploye = () => {
   return (
     <div>
-      <div className="parent">
-        <div className="child">
-          <div className="ml-16">
+      <div className="w-full h-full flex flex-col sm:flex-row bg-[#f5cd15]">
+        <div className="bg-[#f5cd15]">
+          <div className="ml-4 mt-4 sm:mt-0">
             <BrandIcon />
           </div>
-          <Navbar />
+          <div className="mt-[-3rem]">
+            <Navbar />
+          </div>
         </div>
-        <div className="child2">
+        <div className="w-full bg-black h-screen rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden">
           <div className="flex m-4">
             <p className="text-white font-poppins ml-8 mt-2 text-lg">
               Add Service Name:
@@ -39,7 +41,7 @@ const TotalEmploye = () => {
           </div>
           <div className="flex justify-between mr-8 ml-12 mt-[3rem]   ">
             <div className="">
-              <Button name={"+ Add  "} />
+              <Button name={"Submit "} />
             </div>
           </div>
           <div className="flex   justify-around  pr-4">
