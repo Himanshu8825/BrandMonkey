@@ -7,7 +7,7 @@ const Card = () => {
   return (
     <div className="border-gradient rounded-3xl card-item m-2 flex flex-col-reverse">
       <div className="w-full h-1/2 gradient rounded-br-3xl rounded-bl-3xl">
-        <div className="text-white flex absolute mt-[-60px]" id="card-profile">
+        <div className="text-white flex  mt-[-60px]">
           <div>
             <img
               src={CardProfile}

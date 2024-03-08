@@ -43,7 +43,7 @@ const CreateClient = () => {
             <Navbar />
           </div>
         </div>
-        <div className="w-full bg-black h-screen rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden flex justify-center items-center ">
+        <div className="w-full bg-black   rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden flex justify-center items-center ">
           <p className="text-white absolute top-[0px] left-[17rem] font-poppins text-lg font-medium">
             Submit Client Form:
           </p>

@@ -4,7 +4,7 @@ import Error from "../public/Error.png";
 
 const All = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-200">
+    <div className="flex flex-col items-center justify-center   bg-gray-200">
       <img src={ErrPAge} alt="404 Not Found" className="w-full h-full" />
 
       <img

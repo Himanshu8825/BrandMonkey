@@ -2,7 +2,7 @@ import React from "react";
 
 const ReviewDetail = () => {
   return (
-    <div className="w-screen h-screen bg-black flex justify-center items-center">
+    <div className="w-screen   bg-black flex justify-center items-center">
       <div className="w-[50%] h-[90%]  text-white  font-poppins ">
         <span className="flex justify-center items-center text-2xl">
           <p>Review Details </p>

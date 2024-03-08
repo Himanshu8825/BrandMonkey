@@ -8,7 +8,7 @@ import ListCard from "./ListCard";
 const AdminClient = () => {
   return (
     <>
-      <div className="w-full h-screen flex flex-col sm:flex-row bg-[#f5cd15]">
+      <div className="w-full   flex flex-col sm:flex-row bg-[#f5cd15]">
         <div className="bg-[#f5cd15]">
           <div className="ml-4 mt-4 sm:mt-0">
             <BrandIcon />

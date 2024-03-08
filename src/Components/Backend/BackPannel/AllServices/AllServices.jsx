@@ -18,7 +18,7 @@ const TotalEmploye = () => {
             <Navbar />
           </div>
         </div>
-        <div className="w-full bg-black h-screen rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden">
+        <div className="w-full bg-black   rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden">
           <div className="flex m-4">
             <p className="text-white font-poppins ml-8 mt-2 text-lg">
               Add Service Name:

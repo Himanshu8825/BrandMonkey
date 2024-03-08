@@ -19,7 +19,7 @@ const TotalEmploye = () => {
             <Navbar />
           </div>
         </div>
-        <div className="w-full bg-black h-screen rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden">
+        <div className="w-full bg-black   rounded-tl-[2rem] rounded-bl-[2rem] overflow-x-hidden">
           <div className="flex m-4 gap-6 flex-row-reverse  mr-9 ">
             <div className=" flex" id="searchbox">
               <IoMdSearch className="text-white text-2xl absolute  z-10 m-2" />
